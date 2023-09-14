@@ -1,0 +1,22 @@
+﻿@model IEnumerable<UrlEntity>
+
+
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>Original URL</th>
+            <th>Shortened URL</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var urlEntity in Model)
+        {
+            <tr>
+                <td>@urlEntity.Url</td>
+                <td>@urlEntity.ShortUrl</td>
+            </tr>
+        }
+    </tbody>
+</table>
+
